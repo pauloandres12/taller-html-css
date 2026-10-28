@@ -1,0 +1,213 @@
+/* Estilos de la Plataforma de Referidos y Fidelización
+   Taller HTML - CSS | Ingeniería Web */
+
+/* ===== 1. Variables CSS: colores tomados del logo de la Cooperativa ===== */
+:root {
+  --azul: #2a6bab;
+  --azul-oscuro: #1d4a78;
+  --amarillo: #ffc500;
+  --fondo: #f4f8fc;
+  --texto: #1f2933;
+  --sombra: 0 2px 8px rgba(0, 0, 0, 0.18);
+}
+
+/* ===== 2. Estilos generales (selectores de etiqueta) ===== */
+/* Modelo de caja: el padding y el borde se incluyen dentro del ancho */
+* {
+  box-sizing: border-box;
+}
+
+/* Lo que se define en body lo heredan los demás elementos (herencia) */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+  background-color: var(--fondo);
+  color: var(--texto);
+}
+
+h1 {
+  color: var(--azul);
+  font-size: 2rem;
+  border-bottom: 3px solid var(--amarillo);
+  padding-bottom: 0.5rem;
+}
+
+h2,
+h3 {
+  color: var(--azul-oscuro);
+}
+
+/* ===== 3. Encabezado (selector de ID y selector de clase) ===== */
+#encabezado {
+  background-color: var(--azul);
+  color: white;
+  padding: 0.75rem 1.5rem 0 1.5rem;
+  border-bottom: 6px solid var(--amarillo);
+  box-shadow: var(--sombra);
+}
+
+.logo {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+#encabezado span {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-left: 0.75rem;
+}
+
+/* ===== 4. Menú de navegación ===== */
+nav ul {
+  list-style: none;
+  margin: 0.75rem 0 0 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+}
+
+nav a {
+  display: block;
+  padding: 0.6rem 0.9rem;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.95rem;
+  border-radius: 6px 6px 0 0;
+  transition: background-color 0.2s;
+}
+
+nav a:hover {
+  background-color: var(--amarillo);
+  color: var(--azul-oscuro);
+}
+
+/* ===== 5. Datos del proyecto (clase .tarjeta) ===== */
+section {
+  max-width: 1000px;
+  margin: 1.5rem auto 0 auto;
+  padding: 0 1.25rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.tarjeta {
+  flex: 1 1 220px;
+  background-color: white;
+  border-top: 5px solid var(--amarillo);
+  border-radius: 8px;
+  padding: 0.25rem 1.1rem 0.75rem 1.1rem;
+  box-shadow: var(--sombra);
+}
+
+.tarjeta h3 {
+  color: var(--azul);
+  margin: 0.75rem 0 0.25rem 0;
+}
+
+.tarjeta p {
+  margin: 0;
+}
+
+/* ===== 6. Contenido principal (clase .contenido) ===== */
+main {
+  max-width: 1000px;
+  margin: 1.5rem auto;
+  padding: 0 1.25rem;
+}
+
+.contenido {
+  background-color: white;
+  border-left: 8px solid var(--amarillo);
+  border-radius: 8px;
+  padding: 0.5rem 1.5rem 1.25rem 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: var(--sombra);
+  overflow-x: auto;
+}
+
+/* ===== 7. Tablas (clase .tabla) ===== */
+.tabla {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.75rem 0;
+}
+
+.tabla th {
+  background-color: var(--azul);
+  color: white;
+  text-align: left;
+}
+
+.tabla th,
+.tabla td {
+  border: 1px solid #b8c4d0;
+  padding: 0.6rem;
+  vertical-align: top;
+  overflow-wrap: break-word;
+}
+
+.tabla tr:nth-child(even) td {
+  background-color: #eef4fa;
+}
+
+/* ===== 8. Pie de página ===== */
+footer {
+  background-color: var(--azul);
+  color: white;
+  text-align: center;
+  padding: 0.9rem 1.25rem;
+  border-top: 6px solid var(--amarillo);
+}
+
+footer h4 {
+  margin: 0.25rem 0;
+}
+
+/* ===== 9. Diseño responsivo ===== */
+/* Tabletas */
+@media (max-width: 800px) {
+  #encabezado {
+    padding: 0.75rem 1rem 0 1rem;
+  }
+
+  .contenido {
+    padding: 0.25rem 1rem 1rem 1rem;
+  }
+}
+
+/* Teléfonos */
+@media (max-width: 600px) {
+  #encabezado span {
+    display: block;
+    margin: 0.5rem 0 0 0;
+    font-size: 1.1rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0;
+    margin-top: 0.5rem;
+  }
+
+  nav a {
+    border-radius: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .tabla th,
+  .tabla td {
+    font-size: 0.875rem;
+    padding: 0.4rem;
+  }
+}
