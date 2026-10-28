@@ -88,7 +88,7 @@ nav a:hover {
 }
 
 /* ===== 5. Datos del proyecto (clase .tarjeta) ===== */
-section {
+.datos {
   max-width: 1000px;
   margin: 1.5rem auto 0 auto;
   padding: 0 1.25rem;
@@ -166,7 +166,7 @@ footer {
   border-top: 6px solid var(--amarillo);
 }
 
-footer h4 {
+footer p {
   margin: 0.25rem 0;
 }
 
