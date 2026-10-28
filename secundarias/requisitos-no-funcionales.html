@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4. Requisitos No Funcionales</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+    <header id="encabezado">
+        <img src="../img/logo.png" alt="Logo de la Cooperativa Padre Julián Lorente" class="logo">
+        <span>Plataforma de Referidos y Fidelización</span>
+        <nav>
+            <ul>
+                <li><a href="../index.html">1. Descripción general</a></li>
+                <li><a href="usuarios.html">2. Usuarios</a></li>
+                <li><a href="requisitos-funcionales.html">3. Requisitos funcionales</a></li>
+                <li><a href="requisitos-no-funcionales.html">4. Requisitos no funcionales</a></li>
+                <li><a href="alcance.html">5. Alcance</a></li>
+            <li><a href="tecnologias.html">6. Tecnologías</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <aside class="tarjeta">
+            <h3>Cliente</h3>
+            <p>Cooperativa de Ahorro y Crédito Padre Julián Lorente</p>
+        </aside>
+        <aside class="tarjeta">
+            <h3>Asignatura</h3>
+            <p>Ingeniería Web</p>
+        </aside>
+        <aside class="tarjeta">
+            <h3>Integrantes</h3>
+            <p>Javier Viñán, Paulo Bustamante</p>
+        </aside>
+    </section>
+    <main>
+        <article class="contenido">
+            <h1>4. Requisitos No Funcionales</h1>
+            <table class="tabla">
+                <tr>
+                    <th>Código</th>
+                    <th>Categoría</th>
+                    <th>Descripción</th>
+                </tr>
+                <tr>
+                    <td>RNF01</td>
+                    <td>Seguridad</td>
+                    <td>Las contraseñas deben almacenarse cifradas y toda la comunicación debe realizarse mediante HTTPS.</td>
+                </tr>
+                <tr>
+                    <td>RNF02</td>
+                    <td>Seguridad</td>
+                    <td>Cada usuario solo debe acceder a las funciones de su rol (Socio, Administrador o Gestor de contenidos).</td>
+                </tr>
+                <tr>
+                    <td>RNF03</td>
+                    <td>Seguridad</td>
+                    <td>Los datos de socios y referidos deben tratarse conforme a la Ley Orgánica de Protección de Datos Personales del Ecuador.</td>
+                </tr>
+                <tr>
+                    <td>RNF04</td>
+                    <td>Usabilidad</td>
+                    <td>Las acciones principales (registrar un referido, inscribirse en una actividad, consultar puntos) deben realizarse en máximo 3 clics desde el inicio.</td>
+                </tr>
+                <tr>
+                    <td>RNF05</td>
+                    <td>Accesibilidad</td>
+                    <td>La aplicación debe cumplir las pautas WCAG 2.1 nivel AA (contraste suficiente, texto alternativo en imágenes y navegación por teclado).</td>
+                </tr>
+                <tr>
+                    <td>RNF06</td>
+                    <td>Rendimiento</td>
+                    <td>Las páginas principales deben cargar en menos de 3 segundos.</td>
+                </tr>
+                <tr>
+                    <td>RNF07</td>
+                    <td>Compatibilidad</td>
+                    <td>La aplicación debe funcionar en las versiones actuales de Chrome, Firefox, Edge y Safari, y adaptarse a teléfonos, tabletas y computadoras.</td>
+                </tr>
+                <tr>
+                    <td>RNF08</td>
+                    <td>Disponibilidad</td>
+                    <td>La aplicación debe estar disponible al menos el 99 % del tiempo, con copias de seguridad diarias de la base de datos.</td>
+                </tr>
+                <tr>
+                    <td>RNF09</td>
+                    <td>Diseño responsivo</td>
+                    <td>La interfaz debe adaptarse al ancho de pantalla de teléfonos, tabletas y computadoras, sin desplazamiento horizontal.</td>
+                </tr>
+                <tr>
+                    <td>RNF10</td>
+                    <td>Mantenibilidad</td>
+                    <td>El código debe estar organizado, comentado y guardado en un repositorio con control de versiones.</td>
+                </tr>
+                <tr>
+                    <td>RNF11</td>
+                    <td>Escalabilidad</td>
+                    <td>El sistema debe poder crecer en número de socios sin rehacer su diseño.</td>
+                </tr>
+                <tr>
+                    <td>RNF12</td>
+                    <td>Auditoría</td>
+                    <td>Se deben registrar las acciones importantes, como los cambios de estado de los referidos y los canjes de recompensas.</td>
+                </tr>
+                <tr>
+                    <td>RNF13</td>
+                    <td>Idioma</td>
+                    <td>La interfaz debe estar en español y las fechas deben mostrarse como día/mes/año.</td>
+                </tr>
+            </table>
+        </article>
+    </main>
+    <footer>
+        <h4>Plataforma de Referidos y Fidelización</h4>
+        <h4>Documento de Especificación de Requisitos</h4>
+        <h4>21 de octubre de 2026</h4>
+    </footer>
+</body>
+</html>
